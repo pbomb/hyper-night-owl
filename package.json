@@ -2,8 +2,7 @@
   "name": "hyper-night-owl",
   "version": "0.0.0-semantically-released",
   "description": "A Hyper theme based on night-owl-vscode-theme.",
-  "author":
-    "Matt Parrish <matt.r.parrish@gmail.com> (http://twitter.com/mattparrish)",
+  "author": "Matt Parrish <matt.r.parrish@gmail.com> (http://twitter.com/mattparrish)",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -13,7 +12,9 @@
     "url": "https://github.com/pbomb/hyper-night-owl/issues"
   },
   "homepage": "https://github.com/pbomb/hyper-night-owl#readme",
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "hyper",
     "hyper-theme",
@@ -34,6 +35,6 @@
     "validate": "kcd-scripts validate lint"
   },
   "devDependencies": {
-    "kcd-scripts": "^0.37.0"
+    "kcd-scripts": "^0.38.1"
   }
 }
