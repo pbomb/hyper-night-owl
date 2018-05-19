@@ -10,6 +10,9 @@ hyper-night-owl is a beautiful theme for the Hyper terminal based on the [Night 
 
 This code for this theme is based on the [Verminal Hyper terminal theme](https://github.com/defringe/verminal).
 
+<div align="center">
+  <img height="64" width="64" alt="screenshot" src="https://raw.githubusercontent.com/pbomb/hyper-night-owl/master/other/terminal.png" />
+</div>
 <hr />
 
 ## INTRODUCTION
