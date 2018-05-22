@@ -1,7 +1,7 @@
 module.exports.onWindow = browserWindow =>
   browserWindow.setVibrancy("ultra-dark");
 
-const backgroundColor = "rgba(0, 0, 0, .65)";
+const backgroundColor = "rgba(0, 0, 0, .70)";
 const overlap = "rgba(0, 0, 0, .15)";
 
 const colors = {
@@ -16,18 +16,20 @@ const colors = {
   "terminal.ansiBlack": "#011627",
   "terminal.ansiBlue": "#82AAFF",
   "terminal.ansiCyan": "#7fdbca",
-  "terminal.ansiGreen": "#ba67db",
+  "terminal.ansiGreen": "#addb67",
+  "terminal.ansiRed": "#EF5350",
   "terminal.ansiMagenta": "#C792EA",
   "terminal.ansi#5f7e97": "#7fdbca",
-  "terminal.ansiYellow": "#addb67",
+  "terminal.ansiYellow": "#e2b93d",
   "terminal.ansiBrightWhite": "#ffffff",
   "terminal.ansiBrightBlack": "#575656",
   "terminal.ansiBrightBlue": "#82AAFF",
   "terminal.ansiBrightCyan": "#7fdbca",
+  "terminal.ansiBrightRed": "#EF5350",
   "terminal.ansiBrightGreen": "#addb67",
   "terminal.ansiBrightMagenta": "#C792EA",
   "terminal.ansiBright#5f7e97": "#7fdbca",
-  "terminal.ansiBrightYellow": "#addb67"
+  "terminal.ansiBrightYellow": "#ffca28"
 };
 
 exports.decorateConfig = config =>
@@ -38,7 +40,7 @@ exports.decorateConfig = config =>
     cursorColor: colors["editorCursor.foreground"],
     colors: {
       black: colors["terminal.ansiBlack"],
-      red: colors["terminal.ansiMagenta"],
+      red: colors["terminal.ansiRed"],
       green: colors["terminal.ansiGreen"],
       yellow: colors["terminal.ansiYellow"],
       blue: colors["terminal.ansiBlue"],
@@ -46,7 +48,7 @@ exports.decorateConfig = config =>
       cyan: colors["terminal.ansiCyan"],
       white: colors["terminal.ansiBrightWhite"],
       lightBlack: colors["terminal.ansiBrightBlack"],
-      lightRed: colors["terminal.ansiBrightMagenta"],
+      lightRed: colors["terminal.ansiBrightRed"],
       lightGreen: colors["terminal.ansiBrightGreen"],
       lightYellow: colors["terminal.ansiBrightYellow"],
       lightBlue: colors["terminal.ansiBrightBlue"],
