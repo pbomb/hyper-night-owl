@@ -1,7 +1,7 @@
-module.exports.onWindow = browserWindow =>
-  browserWindow.setVibrancy("ultra-dark");
+module.exports.onWindow = browserWindow => browserWindow.setOpacity(0.96);
 
-const backgroundColor = "rgba(0, 0, 0, .70)";
+const backgroundColor = "#011627";
+const foregroundColor = "#d6deeb";
 const overlap = "rgba(0, 0, 0, .15)";
 
 const colors = {
@@ -16,26 +16,22 @@ const colors = {
   "terminal.ansiBlack": "#011627",
   "terminal.ansiBlue": "#82AAFF",
   "terminal.ansiCyan": "#7fdbca",
-  "terminal.ansiGreen": "#addb67",
-  "terminal.ansiRed": "#EF5350",
+  "terminal.ansiYellow": "#addb67",
   "terminal.ansiMagenta": "#C792EA",
   "terminal.ansi#5f7e97": "#7fdbca",
-  "terminal.ansiYellow": "#e2b93d",
   "terminal.ansiBrightWhite": "#ffffff",
   "terminal.ansiBrightBlack": "#575656",
   "terminal.ansiBrightBlue": "#82AAFF",
   "terminal.ansiBrightCyan": "#7fdbca",
-  "terminal.ansiBrightRed": "#EF5350",
-  "terminal.ansiBrightGreen": "#addb67",
   "terminal.ansiBrightMagenta": "#C792EA",
   "terminal.ansiBright#5f7e97": "#7fdbca",
-  "terminal.ansiBrightYellow": "#ffca28"
+  "terminal.ansiBrightYellow": "#addb67"
 };
 
 exports.decorateConfig = config =>
   Object.assign({}, config, {
     backgroundColor,
-    foregroundColor: colors["terminal.ansiWhite"],
+    foregroundColor,
     borderColor: overlap,
     cursorColor: colors["editorCursor.foreground"],
     colors: {
