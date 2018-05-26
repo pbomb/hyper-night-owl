@@ -1,56 +1,32 @@
 module.exports.onWindow = browserWindow => browserWindow.setOpacity(0.96);
 
-const backgroundColor = "#011627";
-const foregroundColor = "#d6deeb";
 const overlap = "rgba(0, 0, 0, .15)";
-
-const colors = {
-  "editorCursor.foreground": "#7e57c2",
-  "tab.activeBackground": "#0b2942",
-  "tab.activeForeground": "#d2dee7",
-  "tab.border": "#272B3B",
-  "tab.activeBorder": "#262A39",
-  "tab.inactiveBackground": "#010e1a",
-  "tab.inactiveForeground": "#5f7e97",
-  "terminal.ansiWhite": "#ffffff",
-  "terminal.ansiBlack": "#011627",
-  "terminal.ansiBlue": "#82AAFF",
-  "terminal.ansiCyan": "#7fdbca",
-  "terminal.ansiYellow": "#addb67",
-  "terminal.ansiMagenta": "#C792EA",
-  "terminal.ansi#5f7e97": "#7fdbca",
-  "terminal.ansiBrightWhite": "#ffffff",
-  "terminal.ansiBrightBlack": "#575656",
-  "terminal.ansiBrightBlue": "#82AAFF",
-  "terminal.ansiBrightCyan": "#7fdbca",
-  "terminal.ansiBrightMagenta": "#C792EA",
-  "terminal.ansiBright#5f7e97": "#7fdbca",
-  "terminal.ansiBrightYellow": "#addb67"
-};
 
 exports.decorateConfig = config =>
   Object.assign({}, config, {
-    backgroundColor,
-    foregroundColor,
+    backgroundColor: "#011627",
+    foregroundColor: "#d6deeb",
     borderColor: overlap,
-    cursorColor: colors["editorCursor.foreground"],
+    cursorColor: "#7e57c2",
+    cursorAccentColor: "#ffffff",
+    selectionColor: "rgba(248, 28, 229, 0.3)",
     colors: {
-      black: colors["terminal.ansiBlack"],
-      red: colors["terminal.ansiRed"],
-      green: colors["terminal.ansiGreen"],
-      yellow: colors["terminal.ansiYellow"],
-      blue: colors["terminal.ansiBlue"],
-      magenta: colors["terminal.ansiMagenta"],
-      cyan: colors["terminal.ansiCyan"],
-      white: colors["terminal.ansiBrightWhite"],
-      lightBlack: colors["terminal.ansiBrightBlack"],
-      lightRed: colors["terminal.ansiBrightRed"],
-      lightGreen: colors["terminal.ansiBrightGreen"],
-      lightYellow: colors["terminal.ansiBrightYellow"],
-      lightBlue: colors["terminal.ansiBrightBlue"],
-      lightMagenta: colors["terminal.ansiBrightMagenta"],
-      lightCyan: colors["terminal.ansiBrightCyan"],
-      lightWhite: colors["terminal.ansiBrightWhite"]
+      black: "#011627",
+      red: "#EF5350",
+      green: "#22da6e",
+      yellow: "#addb67",
+      blue: "#82aaff",
+      magenta: "#c792ea",
+      cyan: "#21c7a8",
+      white: "#ffffff",
+      lightBlack: "#575656",
+      lightRed: "#ef5350",
+      lightGreen: "#22da6e",
+      lightYellow: "#ffeb95",
+      lightBlue: "#82aaff",
+      lightMagenta: "#c792ea",
+      lightCyan: "#7fdbca",
+      lightWhite: "#ffffff"
     },
     css: `
     ${config.css}
@@ -65,26 +41,26 @@ exports.decorateConfig = config =>
     }
     .tab_tab {
       border: 0;
-      background-color: ${colors["tab.inactiveBackground"]};
-      color: ${colors["tab.inactiveForeground"]};
+      background-color: #010e1a;
+      color: #5f7e97;
     }
     .tab_tab::before {
-      background-color: ${colors["tab.border"]};
+      background-color: #272B3B;
     }
     .tab_active {
-      background-color: ${colors["tab.activeBackground"]};
-      color: ${colors["tab.activeForeground"]};
+      background-color: #0b2942;
+      color: #d2dee7;
     }
     .tab_active::before {
-      background-color: ${colors["tab.activeBorder"]};
+      background-color: #262A39;
     }
     .tab_text {
-      background-color: ${colors["tab.inactiveBackground"]};
-      color: ${colors["tab.inactiveForeground"]};
+      background-color: #010e1a;
+      color: #5f7e97;
     }
     .tab_textActive {
-      background-color: ${colors["tab.activeBackground"]};
-      color: ${colors["tab.activeForeground"]};
+      background-color: #0b2942;
+      color: #d2dee7;
     }
     .hyper-search-wrapper {
         border: 0 !important;
@@ -104,7 +80,7 @@ exports.decorateConfig = config =>
     }
     .hyper-search-wrapper button:nth-of-type(1) {
       border-radius: 4px 0 0 4px !important;
-      border-right: 1px solid ${colors["terminal.ansiBrightBlack"]} !important;
+      border-right: 1px solid #575656 !important;
     }
     .hyper-search-wrapper button:nth-of-type(2) {
       border-radius: 0 4px 4px 0 !important;
@@ -119,11 +95,11 @@ exports.decorateConfig = config =>
       z-index: 999;
     }
     #hyper-search-input {
-      background-color: ${colors["terminal.ansiWhite"]} !important;
+      background-color: #ffffff !important;
       border-radius: 4px;
       box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
       padding: 3px 6px 3px 24px !important;
-      color: ${colors["terminal.ansiBlack"]} !important;
+      color: #011627 !important;
       opacity: 0.9 !important;
       margin-right: 2px;
     }
