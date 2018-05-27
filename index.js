@@ -2,11 +2,7 @@ const overlap = "rgba(0, 0, 0, .15)";
 
 exports.decorateConfig = config =>
   Object.assign({}, config, {
-    backgroundColor: `#011627${
-      config.hasOwnProperty("nightOwl") && config.nightOwl.transparentBackground
-        ? "F5"
-        : ""
-    }`,
+    backgroundColor: "#011627",
     foregroundColor: "#d6deeb",
     borderColor: overlap,
     cursorColor: "#7e57c2",

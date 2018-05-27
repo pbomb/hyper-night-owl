@@ -41,18 +41,7 @@ Installing the hyper-night-owl theme for your Hyper terminal couldn't be easier.
 
 ## ⚙️ Configure
 
-By default, hyper-night-owl aims to deliver a beautiful experience out of the box. However, you can override the transparency of the background.
-
-1.  Open `~/.hyper.js` in your favorite editor.
-2.  Add a `nightOwl` object to the `config` object and specify `transparentBackground`.
-
-###### Example
-
-```javascript
-nightOwl: {
-  transparentBackground: true, // default value is false
-}
-```
+By default, hyper-night-owl aims to deliver a beautiful experience out of the box. By default, it does not supply a transparent background, however, if you'd like to have this, I recommend installing and configuring the [hyper-opacity](https://hyper.is/plugins/hyper-opacity) plugin.
 
 ## ⚡️ Contribute
 
