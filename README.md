@@ -11,7 +11,7 @@ hyper-night-owl is a beautiful theme for the Hyper terminal based on the [Night 
 This code for this theme is based on the [Verminal Hyper terminal theme](https://github.com/defringe/verminal).
 
 <div align="center">
-  <img height="363" width="640" alt="screenshot" src="https://raw.githubusercontent.com/pbomb/hyper-night-owl/master/other/terminal.png" />
+  <img height="315" width="640" alt="screenshot" src="https://raw.githubusercontent.com/pbomb/hyper-night-owl/master/other/terminal.png" />
 </div>
 <hr />
 
@@ -38,6 +38,21 @@ Installing the hyper-night-owl theme for your Hyper terminal couldn't be easier.
 1.  Open `~/.hyper.js` in your favorite editor.
 1.  Add `hyper-night-owl` to the `plugins` array.
 1.  Enjoy hyper-night-owl.
+
+## ⚙️ Configure
+
+By default, hyper-night-owl aims to deliver a beautiful experience out of the box. However, you can override the transparency of the background.
+
+1.  Open `~/.hyper.js` in your favorite editor.
+2.  Add a `nightOwl` object to the `config` object and specify `transparentBackground`.
+
+###### Example
+
+```javascript
+nightOwl: {
+  transparentBackground: true, // default value is false
+}
+```
 
 ## ⚡️ Contribute
 
