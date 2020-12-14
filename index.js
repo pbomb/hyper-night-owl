@@ -89,7 +89,7 @@ exports.decorateConfig = config =>
       position: absolute;
       content: "🔍";
       font-size: 10px;
-      margin: 7px;
+      margin: 0 0 0 7px;
       z-index: 999;
     }
     #hyper-search-input {
